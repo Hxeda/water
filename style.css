@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@700&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #FBDAF8;
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+.cont {
+	position: relative;
+	width: 650px;
+	height: 350px;
+	background: url("https://wallpapercave.com/wp/wp2712409.png");
+	background-size: cover;
+	border-radius: 60px;
+	cursor: pointer; 
+}
+.cont img {
+	position: absolute;
+	bottom: 0;
+	transform: translateX(5%);
+	transition: 1s;
+	height: 80%
+}
+.cont:hover img {
+	transform: translateX(80%);
+	height: 100%;
+}
+.textW {
+	font-family: 'Merriweather Sans', sans-serif;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	padding-right: 60px;
+	height: 17vh;
+	font-size: 60px;
+	color: #fff;
+	text-shadow: 4px 4px #333774, 8px 6px #454896;
+}
+.water {
+	font-family: 'Merriweather Sans', sans-serif;
+	font-size: 20px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	padding-right: 35px;
+	color: #fff; 
+}
+
+.cont:hover p {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.owo {
+	position: absolute;
+	font-family: 'Merriweather Sans', sans-serif;
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	padding-left: 35px;
+	font-size: 60px;	
+	color: #fff;
+	text-shadow: 4px 4px #333774, 8px 6px #454896;
+	width: 100vh;
+	opacity: 0;
+}
+
+.cont:hover .owo {
+	opacity: 1;
+	transform: translateY(-90px);
+	transition: 1s ;
+}
+
+audio {
+	height: 25%;
+	position: relative;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	padding-left: 25px;
+	padding-top: 30px;
+	opacity: 0;
+	color: #C8D7FA;
+}
+.cont:hover audio{
+	opacity: 1;
+	transition: 2s;
+}
